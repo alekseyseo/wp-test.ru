@@ -1,0 +1,142 @@
+//http://alexriz.github.io/resdes/tpl-5.html
+//https://habrahabr.ru/post/242545/
+//http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
+//http://css-live.ru/articles/vizualnoe-rukovodstvo-po-svojstvam-flexbox-iz-css3.html
+
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.containet {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  //flex-flow: row wrap;
+  height: 100%;
+
+}
+
+.bl {
+  background-color: violet;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  //box-sizing: border-box;
+  border: 15px rebeccapurple solid;
+  order: 100;
+}
+
+.bl-1 {
+  width: 100%;
+  order: 1;
+}
+
+.bl-2 {
+  width: 100%;
+  order: 3;
+}
+
+.bl-3 {
+  //width: 100%;
+  order: 2;
+}
+
+.bl-4 {
+  flex-basis: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  //width: 100%;
+  order: 4;
+}
+
+.bl-5 {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  //width: 100%;
+  order: 5;
+  align-self: baseline;
+}
+
+.bl-6 {
+  flex-basis: 150px;
+  flex-grow: 1;
+  flex-shrink: 4;
+
+  //width: 100%;
+  order: 6;
+}
+
+.bl-7 {
+  flex-basis: 100%;
+  flex-grow: 1;
+  //flex-shrink: 1;
+
+  //width: 100%;
+  order: 7;
+}
+
+.containet2 {
+  display: flex;
+  flex-wrap: nowrap;
+
+  flex-direction: row;
+  align-items: baseline;
+  align-content: space-between;
+  justify-content: flex-start;
+
+  .bl {
+    flex-shrink: 1;
+  }
+
+  .bl-1 {
+    flex-shrink: 2;
+  }
+
+}
+
+.containet3 {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 400px;
+
+  flex-direction: column;
+  align-items: baseline;
+  //align-content:space-between;
+  justify-content: center;
+  //justify-content: flex-start;
+  background-color: darkgreen;
+
+  .bl {
+    background-color: #7BA0FF;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: 100%;
+    //flex-basis: 100px;
+    width: auto;
+    min-height: 100px;
+  }
+
+  .bl-1 {
+    height: 300px;
+    min-height: 300px;
+    width: 400px;
+    //flex-shrink: 2;
+  }
+
+  .bl-2, .bl-3 {
+    //height: 300px;
+    //min-height: 300px;
+    width: 200px;
+    //flex-shrink: 2;
+  }
+
+  .bl-4{
+    width: 100%;
+  }
+
+}

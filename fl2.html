@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 4px;
+            padding: 0px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .header, .navbar, .content, .footer, .sidebar {
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 4px;
+        }
+        .header {
+            height: 120px;
+            background-color: #002A92;
+        }
+        .navbar {
+            background-color: #2563FF;
+            text-align: center;
+        }
+        .navbar a {
+            color: #ffffff;
+        }
+        .footer {
+            height: 50px;
+            background-color: #002A92;
+        }
+        .sidebar.left {
+            background-color: #002A92;
+        }
+        .sidebar.right {
+            background-color: #002A92;
+        }
+        .content {
+            background-color: #7BA0FF;
+        }
+
+
+
+        /* flexbox code*/
+        body {
+            display: flex;
+            flex-flow: row wrap;
+            height: 100%;
+        }
+        .header, .footer, .navbar {
+            flex: 1 1 100%;
+        }
+        .sidebar {
+            flex: 0 0 200px;
+        }
+        .content {
+            min-height: 300px;
+            flex: 1 1 360px;
+        }
+
+
+        @media (max-width: 800px) {
+            .content { flex: 1 1 100%; }
+            .sidebar { flex: 1 1 200px; }
+        }
+        @media (min-width: 800px) {
+            .header        { order: 1; }
+            .navbar        { order: 2; }
+            .sidebar.left  { order: 3; }
+            .content       { order: 4; }
+            .sidebar.right { order: 5; }
+            .footer        { order: 6; }
+        }
+    </style>
+</head>
+<body>
+<div class="header">I'm Header</div>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contacts</a>
+</div>
+<div class="content">Lorem ipsum dolor sit amet, antiopam dignissim mei at, per ferri dolorum at...</div>
+<div class="sidebar left">I'm Left sidebar</div>
+<div class="sidebar right">I'm Right sidebar</div>
+<div class="footer">I'm Footer</div>
+
+
+</body>
+</html>
