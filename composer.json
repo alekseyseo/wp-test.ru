@@ -1,8 +1,8 @@
 {
   "name": "alekseyseo/wp-test.ru",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "type": "wordpress-plugin",
   "require": {
     "composer/installers": "v1.0.6"
   }
-}
+ }
