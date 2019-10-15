@@ -1,12 +1,8 @@
 {
   "name": "alekseyseo/wp-test.ru",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "wordpress-plugin",
   "require": {
     "composer/installers": "v1.0.6"
-  },
-  "dist": {
-        "url": "https://github.com/alekseyseo/wp-test.ru.git",
-        "type": "git"
-    }
+  }
 }
