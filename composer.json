@@ -1,0 +1,12 @@
+{
+  "name": "alekseyseo/wp-test.ru",
+  "version": "master",
+  "type": "wordpress-plugin",
+  "require": {
+    "composer/installers": "v1.0.6"
+  },
+  "dist": {
+        "url": "https://github.com/alekseyseo/wp-test.ru.git",
+        "type": "git"
+    }
+}
