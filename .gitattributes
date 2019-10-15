@@ -1,3 +1,3 @@
-/.gitignore
-/flex1.less
-/composer.json
+/.gitignore      export-ignore
+/flex1.less      export-ignore
+/composer.json   export-ignore
